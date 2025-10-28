@@ -5,7 +5,7 @@ import { io } from "socket.io-client";
 export default function MqttClient({ onMotion, onStreamIp }) {
   useEffect(() => {
     // Connect to your backend WebSocket
-    const socket = io("http://localhost:5000", {
+    const socket = io("https://finalyearproject-backend-8yev.onrender.com", {
       transports: ["websocket"],
       reconnection: true,
     });
